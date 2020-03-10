@@ -1,16 +1,80 @@
-.App {
-  text-align: center;
-}
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media (min-width: 1281px) {
+  /* //CSS */
+  .About {
+    margin: 2em 25%;
   }
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  /* //CSS */
+  .About {
+    margin: 2em 25%;
+  }
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* //CSS */
+  .About {
+    margin: 2em;
+    width: auto;
+  }
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  /* //CSS */
+  .About {
+    margin: 2em;
+    width: auto;
+  }
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  /* //CSS */
+  .About {
+    margin: 2em;
+    width: auto;
+  }
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  /* //CSS */
+  .About {
+    margin: 2em;
+    width: auto;
+  }
+}
+
+.App {
 }
 
 .App-header {
@@ -28,11 +92,47 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav-style {
+  text-align: right;
+}
+
+.nav-style ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-style li {
+  list-style: none;
+  display: inline;
+  margin-right: 1rem;
+}
+
+.nav-style a {
+  text-decoration: none;
+  color: #000000;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+
+* {
+  font-family: "Montserrat", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.Logo {
+  display: flex;
+  flex-direction: row;
+  margin-left: 1rem;
+  margin-top: 1rem;
+  vertical-align: center;
+}
+
+.Intro {
+  color: rgb(138, 131, 136);
+}
+
+.About p {
+  text-align: justify;
 }

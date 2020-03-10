@@ -6,7 +6,15 @@ const Navbar = () => {
     <nav className="nav-style">
       <ul>
         <li>
-          <Link to="/">Home</Link>
+          <Link to="/">
+            {" "}
+            <img
+              className="Logo"
+              height="128px"
+              src="/logo_KD.png"
+              alt="KD"
+            />{" "}
+          </Link>
         </li>
         <li>
           <Link to="/about">About</Link>

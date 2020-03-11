@@ -131,6 +131,31 @@
 
 .Intro {
   color: rgb(138, 131, 136);
+  text-align: center;
+  margin: 1.5rem;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  margin: 1rem 10%;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.container h3 {
+  color: rgb(138, 131, 136);
+}
+
+.LinkDiv {
+  padding: 0.5em 2em;
+  background-color: rgb(129, 179, 175);
+  border-radius: 4px;
+}
+
+.LinkDiv a {
+  text-decoration: none;
+  color: #ffffff;
 }
 
 .About {
@@ -146,4 +171,12 @@
 .About p {
   text-align: justify;
   padding: 0.5em 1rem;
+}
+
+.Footer {
+  background-color: rgb(138, 131, 136);
+  color: #ffffff;
+  text-align: center;
+  font-size: 0.8em;
+  padding: 0.5em;
 }

@@ -3,7 +3,7 @@ import React from "react";
 export default function Footer() {
   return (
     <div className="Footer">
-      <p>Footer with infos here</p>
+      <p>Copyright © 2020 Konstantin Dauer</p>
     </div>
   );
 }

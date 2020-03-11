@@ -133,6 +133,17 @@
   color: rgb(138, 131, 136);
 }
 
+.About {
+  background-color: #f5f6f7;
+}
+
+.About h3 {
+  color: rgb(129, 179, 175);
+  margin: 1.2rem 0;
+  text-align: center;
+}
+
 .About p {
   text-align: justify;
+  padding: 0.5em 1rem;
 }

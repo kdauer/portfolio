@@ -29,7 +29,7 @@ const About = () => {
         now I want to connect people and the web.
       </p>
       <p>
-        As a freelancer I did a little bit of Design with InDesign, Illustrator
+        As a freelancer I did also creative work with Design with InDesign, Illustrator
         and Photoshop.
       </p>
       <p>

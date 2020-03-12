@@ -3,25 +3,28 @@ import { Link } from "react-router-dom";
 
 export const myProjects = [
   {
-    id: "1a",
+    id: "1",
     name: "around the world in 100 clicks",
     year: 2020,
+    img: "/project1.png",
     technologies: "HTML, CSS, JavaScript",
     description: "1st Ironhack project. A country Quiz game"
   },
   {
-    id: "2b",
+    id: "2",
     name: "Breakpoint",
     year: 2020,
+    img: "/project2.png",
     technologies:
       "Mongo DB, ExpressJS, NodeJS, JavaScript, HTML, CSS, handlebars, mongoose, passport, mapbox, Chart.js, Surfline-API",
     description:
       "Full Stack Web App that allows users to search for surf spots in portugal based on the break type and if they are logged in they can save them as favourites"
   },
   {
-    id: "3c",
+    id: "3",
     name: "greenLine",
     year: 2020,
+    img: "/project3.png",
     technologies:
       "Mongo DB, ExpressJS, React, NodeJS, JavaScript, HTML, CSS, passport, Deutsche Bahn APIs",
     description:
@@ -31,16 +34,17 @@ export const myProjects = [
 
 export const Projects = () => {
   return (
-    <div>
-      <h2>Projects:</h2>
+    <div className="projectContainer">
       {myProjects.map(eachProject => {
         return (
           <div key={eachProject.id}>
-            <h3>
-              <Link to={`/projects/${eachProject.id}`}>{eachProject.name}</Link>
-            </h3>
-            <h4>{eachProject.technologies}</h4>
-            <hr />
+            {/* <Link to={`/projects/${eachProject.id}`}> */}
+            <img
+              className="projectImg"
+              src={eachProject.img}
+              alt="Projectpicture"
+            />
+            {/* </Link> */}
           </div>
         );
       })}

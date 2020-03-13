@@ -200,11 +200,18 @@
 }
 .projectContainer div {
   margin: 0.5rem;
+  border-style: 4px solid black;
 }
 
 .projectImg {
   height: auto;
   width: 100%;
+}
+
+.hover {
+  background-color: red;
+  color: blue;
+  border-style: 4px solid black;
 }
 
 .Footer {

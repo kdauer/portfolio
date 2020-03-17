@@ -150,7 +150,7 @@
 }
 
 .Intro {
-  color: rgb(138, 131, 136);
+  color: rgb(198, 191, 196);
   text-align: center;
   margin: 1.5rem;
 }
@@ -164,7 +164,7 @@
 }
 
 .container h3 {
-  color: rgb(138, 131, 136);
+  color: rgb(198, 191, 196);
 }
 
 .LinkDiv {
@@ -194,28 +194,67 @@
 }
 
 .projectContainer {
-  height: 100vh;
   margin: 0.5em;
   margin-top: 4em;
 }
-.projectContainer div {
-  margin: 0.5rem;
-  border-style: 4px solid black;
+
+.box {
+  position: relative;
+  margin: 0.5em;
+  background-color: rgb(198, 191, 196);
 }
 
 .projectImg {
-  height: auto;
+  opacity: 1;
+  display: block;
   width: 100%;
+  transition: 1s ease;
+  backface-visibility: hidden;
 }
 
-.hover {
-  background-color: red;
-  color: blue;
-  border-style: 4px solid black;
+.project_title {
+  color: rgb(129, 179, 175);
+  background-color: transparent;
+  margin: 0.2em;
+  padding-bottom: 1em;
+  font-weight: bold;
+}
+
+.mask {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  white-space: nowrap;
+  line-height: 2em;
+}
+
+.box:hover .projectImg {
+  opacity: 0;
+}
+
+.box:hover .mask {
+  opacity: 1;
+}
+
+.link {
+  background-color: rgb(129, 179, 175);
+  color: #ffffff;
+  padding: 0.5em 2em;
+  margin-top: 2em;
+  text-decoration: none;
+}
+
+.space {
+  height: 100vh;
 }
 
 .Footer {
-  background-color: rgb(138, 131, 136);
+  background-color: rgb(198, 191, 196);
   color: #ffffff;
   text-align: center;
   font-size: 0.8em;

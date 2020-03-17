@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 
 export const myProjects = [
@@ -33,28 +33,26 @@ export const myProjects = [
 ];
 
 export const Projects = () => {
-  const [hover, setHover] = useState(false);
-
   return (
     <div className="projectContainer">
       {myProjects.map(eachProject => {
         return (
-          <div
-            key={eachProject.id}
-            onMouseEnter={() => setHover(!hover)}
-            onMouseLeave={() => setHover(hover)}
-          >
-            {!hover ? (
-              <img
-                className="projectImg"
-                src={eachProject.img}
-                alt="Projectpicture"
-              />
-            ) : (
-              <div className="hover">
-                <Link to={`/projects/${eachProject.id}`}>view Details</Link>
-              </div>
-            )}
+          <div className="box" key={eachProject.id}>
+            <img
+              className="projectImg"
+              src={eachProject.img}
+              alt="Projectpicture"
+            />
+            <div className="mask">
+              <p className="project_title">{eachProject.name}</p>
+              <Link
+                to={`/projects/${eachProject.id}`}
+                props={eachProject.img}
+                className="link"
+              >
+                view Details
+              </Link>
+            </div>
           </div>
         );
       })}

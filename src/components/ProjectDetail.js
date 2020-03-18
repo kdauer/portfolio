@@ -16,14 +16,29 @@ const ProjectDetails = props => {
   const foundProject = getProject(params.id, 10);
 
   return (
-    <div>
-      <h2>
-        {foundProject.name}{" "}
-        <span style={{ fontSize: "16px" }}>{foundProject.year}</span>
-      </h2>
-      <h3>Used technologies: {foundProject.technologies}</h3>
-      <p>{foundProject.description}</p>
-      <Link to="/projects">Back</Link>
+    <div className="detailcontainer">
+      <div className="projectDetail">
+        <img src={foundProject.img} alt="projectImage" />
+        <h3>Description</h3>
+        <p>{foundProject.description}</p>
+        <h3>Development</h3>
+        <p>{foundProject.development}</p>
+        <p style={{ color: "rgb(129, 179, 175)" }}>
+          created in {foundProject.year}
+        </p>
+      </div>
+      <div className="sitecontainer">
+        <div className="webLink">
+          <h2>{foundProject.name}</h2>
+          <Link to={foundProject.weblink} className="link">
+            view Website
+          </Link>
+        </div>
+        <div className="techSpec">
+          <h3>Technologies</h3>
+          <p>{foundProject.technologies}</p>
+        </div>
+      </div>
     </div>
   );
 };

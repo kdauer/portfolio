@@ -12,6 +12,18 @@
     display: flex;
     justify-content: space-between;
   }
+  .projectDetail {
+    margin: 2em 5% 2em 10%;
+  }
+  .detailcontainer {
+    display: flex;
+    justify-content: space-between;
+  }
+  .webLink h2 {
+    color: rgb(129, 179, 175);
+    margin-bottom: 1.2em;
+    white-space: nowrap;
+  }
 }
 
 /* 
@@ -27,6 +39,18 @@
   .projectContainer {
     display: flex;
     justify-content: space-between;
+  }
+  .projectDetail {
+    margin: 2em 5% 2em 10%;
+  }
+  .detailcontainer {
+    display: flex;
+    justify-content: space-between;
+  }
+  .webLink h2 {
+    color: rgb(129, 179, 175);
+    margin-bottom: 1.2em;
+    white-space: nowrap;
   }
 }
 
@@ -44,6 +68,18 @@
   .projectContainer {
     display: block;
   }
+  .projectDetail {
+    margin: 2em;
+    width: auto;
+  }
+  .detailcontainer {
+    display: block;
+  }
+  .webLink h2 {
+    color: rgb(129, 179, 175);
+    margin-bottom: 1.2em;
+    white-space: pre-line;
+  }
 }
 
 /* 
@@ -59,6 +95,18 @@
   }
   .projectContainer {
     display: block;
+  }
+  .projectDetail {
+    margin: 2em;
+    width: auto;
+  }
+  .detailcontainer {
+    display: block;
+  }
+  .webLink h2 {
+    color: rgb(129, 179, 175);
+    margin-bottom: 1.2em;
+    white-space: pre-line;
   }
 }
 
@@ -76,6 +124,18 @@
   .projectContainer {
     display: block;
   }
+  .projectDetail {
+    margin: 2em;
+    width: auto;
+  }
+  .detailcontainer {
+    display: block;
+  }
+  .webLink h2 {
+    color: rgb(129, 179, 175);
+    margin-bottom: 1.2em;
+    white-space: pre-line;
+  }
 }
 
 /* 
@@ -92,24 +152,18 @@
   .projectContainer {
     display: block;
   }
-}
-
-.App {
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
+  .projectDetail {
+    margin: 2em;
+    width: auto;
+  }
+  .detailcontainer {
+    display: block;
+  }
+  .webLink h2 {
+    color: rgb(129, 179, 175);
+    margin-bottom: 1.2em;
+    white-space: pre-line;
+  }
 }
 
 .nav-style {
@@ -202,6 +256,7 @@
   position: relative;
   margin: 0.5em;
   background-color: rgb(198, 191, 196);
+  border-radius: 6px;
 }
 
 .projectImg {
@@ -210,6 +265,7 @@
   width: 100%;
   transition: 1s ease;
   backface-visibility: hidden;
+  border-radius: 6px;
 }
 
 .project_title {
@@ -249,8 +305,56 @@
   text-decoration: none;
 }
 
+.sitecontainer {
+  margin: 2em;
+  display: flex;
+  flex-direction: column;
+}
+
+.projectDetail {
+  background-color: #f5f6f7;
+}
+
+.projectDetail img {
+  max-width: 100%;
+}
+
+.projectDetail p {
+  text-align: justify;
+  padding: 0.5em 1rem;
+}
+
+.projectDetail h3 {
+  color: rgb(129, 179, 175);
+  padding: 0.5em 1rem;
+}
+
+.webLink {
+  background-color: #f5f6f7;
+  padding: 2em;
+  white-space: nowrap;
+}
+
+.techSpec {
+  background-color: #f5f6f7;
+  margin-top: 2em;
+  padding: 0.2em;
+  line-height: 1.5em;
+  padding-left: 1.5em;
+}
+
+.techSpec p {
+  width: 0;
+  overflow: visible;
+}
+
+.techSpec h3 {
+  color: rgb(129, 179, 175);
+  padding-bottom: 0.8em;
+  padding-top: 0.5em;
+}
 .space {
-  height: 100vh;
+  height: 50vh;
 }
 
 .Footer {

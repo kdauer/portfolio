@@ -4,8 +4,8 @@ import Home from "./components/Home";
 import About from "./components/About";
 import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
-import ProjectDetails from "./components/ProjectDetail";
 import Footer from "./components/Footer";
+import ContactForm from "./components/ContactForm";
 import { Switch, Route } from "react-router-dom";
 
 function App() {
@@ -17,7 +17,7 @@ function App() {
         <Route exact path="/" component={Home} />
         <Route path="/about" component={About} />
         <Route exact path="/projects" component={Projects} />
-        <Route exact path="/projects/:id" component={ProjectDetails} />
+        <Route exact path="/contact" component={ContactForm} />
       </Switch>
       <div className="space"></div>
       <Footer />

@@ -6,7 +6,9 @@ export default class ContactForm extends Component {
     name: "",
     email: "",
     subject: "",
-    message: ""
+    message: "",
+    sent: false,
+    buttonText: "Send Message"
   };
   onNameChange(event) {
     this.setState({ name: event.target.value });
@@ -26,22 +28,31 @@ export default class ContactForm extends Component {
 
   handleSubmit(e) {
     e.preventDefault();
+    this.setState({
+      buttonText: "...sending"
+    });
+
     axios({
       method: "POST",
-      url: "http://localhost:8000/send",
+      url: "http://localhost:9000/send",
       data: this.state
-    }).then(response => {
-      if (response.data.status === "success") {
-        alert("Message Sent.");
-        this.resetForm();
-      } else if (response.data.status === "fail") {
-        alert("Message failed to send.");
-      }
-    });
+    })
+      .then(res => {
+        this.setState({ sent: true }, this.resetForm());
+      })
+      .catch(() => {
+        console.log("Message not sent");
+      });
   }
 
   resetForm() {
-    this.setState({ name: "", email: "", subject: "", message: "" });
+    this.setState({
+      name: "",
+      email: "",
+      subject: "",
+      message: "",
+      buttonText: "Message Sent"
+    });
   }
 
   render() {
@@ -94,7 +105,7 @@ export default class ContactForm extends Component {
             />
           </div>
           <button type="submit" className="btn btn-primary">
-            Submit
+            {this.state.buttonText}
           </button>
         </form>
       </div>

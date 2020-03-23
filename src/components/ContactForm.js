@@ -32,11 +32,11 @@ export default class ContactForm extends Component {
       buttonText: "...sending"
     });
 
-    axios({
-      method: "POST",
-      url: "http://localhost:9000/send",
-      data: this.state
-    })
+    axios
+      .post({
+        url: "http://localhost:9000/send",
+        data: this.state
+      })
       .then(res => {
         this.setState({ sent: true }, this.resetForm());
       })

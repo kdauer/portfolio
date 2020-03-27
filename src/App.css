@@ -248,6 +248,7 @@
 
 * {
   font-family: "Montserrat", sans-serif;
+  font-size: 16px;
   padding: 0;
   margin: 0;
 }
@@ -280,6 +281,7 @@
 
 .LinkDiv {
   padding: 0.5em 2em;
+  margin-left: 2em;
   background-color: rgb(129, 179, 175);
   border-radius: 4px;
 }

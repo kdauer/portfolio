@@ -9,6 +9,7 @@ import ContactForm from "./components/ContactForm";
 import Impress from "./components/legalnotice";
 import DSGVO from "./components/privacypolicy";
 import Footer from "./components/Footer";
+import vCard from "./components/vCard";
 import { Switch, Route } from "react-router-dom";
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
         <Route exact path="/contact" component={ContactForm} />
         <Route path="/legalnotice" component={Impress} />
         <Route path="/privacypolicy" component={DSGVO} />
+        <Route path="/k" component={vCard} />
       </Switch>
       <div className="space"></div>
       <Footer />

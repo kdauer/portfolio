@@ -1,10 +1,9 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 export default function vCard() {
   return (
     <div>
-      <Link to="/k.vcf" target="_blank" data-auto-download></Link>
+      <a href="/k.vcf" target="_blank" data-auto-download></a>
     </div>
   );
 }

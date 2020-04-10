@@ -6,20 +6,20 @@ export default function Footer() {
     <div className="Footer">
       <p>
         Copyright © 2020 Konstantin Dauer{" "}
-        <Link
-          to="https://github.com/kdauer"
+        <a
+          href="https://github.com/kdauer"
           rel="noopener noreferrer"
           target="blank"
         >
           <img height="16px" src="/logo-github.svg" alt="github" />
-        </Link>
-        <Link
-          to="https://linkedin.com/in/kdauer"
+        </a>
+        <a
+          href="https://linkedin.com/in/kdauer"
           rel="noopener noreferrer"
           target="blank"
         >
           <img height="16px" src="/logo-linkedin.svg" alt="linkedin" />
-        </Link>
+        </a>
         <Link to="/privacypolicy">Datenschutz</Link>
         <Link to="/legalnotice">Impressum</Link>
       </p>

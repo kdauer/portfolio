@@ -1,12 +1,11 @@
 import React from "react";
 import { myProjects } from "./Projects";
-import { Link } from "react-router-dom";
 
-const ProjectDetails = props => {
+const ProjectDetails = (props) => {
   console.log(props);
 
-  const getProject = id => {
-    const theProject = oneProject => {
+  const getProject = (id) => {
+    const theProject = (oneProject) => {
       return oneProject.id === id;
     };
     return myProjects.find(theProject);
@@ -30,9 +29,9 @@ const ProjectDetails = props => {
       <div className="sitecontainer">
         <div className="webLink">
           <h2>{foundProject.name}</h2>
-          <Link to={foundProject.weblink} className="link">
+          <a href={foundProject.weblink} className="link">
             view Website
-          </Link>
+          </a>
         </div>
         <div className="techSpec">
           <h3>Technologies</h3>

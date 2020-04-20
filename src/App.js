@@ -10,7 +10,8 @@ import Impress from "./components/legalnotice";
 import DSGVO from "./components/privacypolicy";
 import Footer from "./components/Footer";
 import vCard from "./components/vCard";
-import { Switch, Route } from "react-router-dom";
+import { Switch, Route, Link } from "react-router-dom";
+import CookieConsent from "react-cookie-consent";
 
 function App() {
   return (
@@ -28,6 +29,23 @@ function App() {
         <Route path="/k" component={vCard} />
       </Switch>
       <div className="space"></div>
+      <CookieConsent
+        location="bottom"
+        buttonText="Accept"
+        cookieName="myAwesomeCookieName2"
+        style={{ background: "#2B373B" }}
+        buttonStyle={{ color: "#4e503b", fontSize: "13px" }}
+        expires={150}
+      >
+        this website uses cookies in the sense of the{" "}
+        <Link
+          to="/privacypolicy"
+          style={{ textDecoration: "none", color: "lightblue" }}
+        >
+          privacy policy
+        </Link>{" "}
+        <span style={{ fontSize: "10px" }}>(accept to continue)</span>
+      </CookieConsent>
       <Footer />
     </div>
   );

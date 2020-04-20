@@ -20,8 +20,8 @@ export default function Footer() {
         >
           <img height="16px" src="/logo-linkedin.svg" alt="linkedin" />
         </a>
-        <Link to="/privacypolicy">Datenschutz</Link>
-        <Link to="/legalnotice">Impressum</Link>
+        <Link to="/privacypolicy">privacy policy</Link>
+        <Link to="/legalnotice">legal notice</Link>
       </p>
     </div>
   );

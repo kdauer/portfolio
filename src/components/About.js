@@ -7,14 +7,17 @@ const About = () => {
       <h3>Konstantin Dauer - Full Stack Web Developer</h3>
       <p>
         Gathering 10 years of experience as a freelance event technology
-        specialist and working all over Europe, always focused to be up to date
-        with the latest technologies in the field. Over the years I defined and
-        created concepts, constructions and programs, drew technical plans with
-        Vectorworks and AutoCAD. Over the years I planned, controlled and
-        managed more than 100 events per year with budgets over 150.000 € and of
-        various kind. Such as concerts, festivals, fairs, conferences,
-        conventions, product presentations, theater, movie and dance
-        productions. In 2014 I started to study the B. Eng. degree program
+        specialist and working all over Europe, I was looking for a new
+        Challenge.
+      </p>
+      <p>
+        Always focused to be up to date with the latest technologies in the
+        field. I defined and created concepts, constructions and programs, drew
+        technical plans with Vectorworks and AutoCAD. Over the years I planned,
+        controlled and managed more than 100 events per year with budgets over
+        150.000 € and of various kind. Such as concerts, festivals, fairs,
+        conferences, conventions, product presentations, theater, movie and
+        dance productions. In 2014 I started to study the B. Eng. degree program
         "event technology and management" at Beuth University of Applied Science
         in Berlin.
       </p>

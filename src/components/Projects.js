@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 export const myProjects = [
   {
@@ -11,7 +12,7 @@ export const myProjects = [
     technologies: "HTML CSS JavaScript",
     description:
       "a Quizgame where you have to guess the countryname based on the shape",
-    weblink: "https://kdauer.github.io/around-the-world-in-100-clicks/",
+    weblink: "https://kdauer.github.io/around-the-world-in-100-clicks/"
   },
   {
     id: "2",
@@ -23,7 +24,7 @@ export const myProjects = [
       "mongoDB expressJS nodeJS JavaScript HTML CSS handlebars mongoose passport mapbox Chart.js SurflineAPI",
     description:
       "Full Stack Web App that allows users to search for surf spots in portugal based on the break type and if they are logged in they can save them as favourites",
-    weblink: "https://break-point-app.herokuapp.com/",
+    weblink: "https://break-point-app.herokuapp.com/"
   },
   {
     id: "3",
@@ -35,14 +36,15 @@ export const myProjects = [
       "mongoDB expressJS React nodeJS JavaScript HTML CSS passport DeutscheBahnAPIs",
     description:
       "A MERN Web App where you can search for low fare train tickets in the Deutsche Bahn train&ticketing system and show days around your selected date. Also loggedin users you can save the connections to search again",
-    weblink: "http://green-line.herokuapp.com/",
-  },
+    weblink: "http://green-line.herokuapp.com/"
+  }
 ];
 
 export const Projects = () => {
+  const { t } = useTranslation("projects");
   return (
     <div className="projectContainer">
-      {myProjects.map((eachProject) => {
+      {myProjects.map(eachProject => {
         return (
           <div className="box" key={eachProject.id}>
             <img
@@ -57,7 +59,7 @@ export const Projects = () => {
                 props={eachProject.img}
                 className="link"
               >
-                view Details
+                {t("projects:details")}
               </Link>
             </div>
           </div>

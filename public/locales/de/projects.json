@@ -1,0 +1,20 @@
+{
+  "projects": [
+    {
+      "id": "1",
+      "development": "1. Ironhack Projekt, in 4 Tagen programmiert",
+      "description": "Ein Quizspiel, bei dem man anhand der Länderform den Ländernamen erraten muss"
+    },
+    {
+      "id": "2",
+      "development": "2. Ironhack Projekt, in 4 Tagen programmiert",
+      "description": "Eine Full Stack Web App die es den Nutzern erlaubt Surf-Spots in Portugal nach Typ auszuwählen und eine Live-Übersicht der Surfbedingen zu bekommen. Wenn Nutzer eingeloggt sind können sie die Spots zu ihren Fvoriten hinzufügen."
+    },
+    {
+      "id": "3",
+      "development": "3. und finales Projekt für Ironhack, in 7 Tagen programmiert",
+      "description": "Eine MERN Web App die es ermöglicht nach Sparpreis-Tickets zwischen Städten im Fernverkehrsnetz der Deustchen Bahn zu suchen. Nutzer die eingeloggt sind können Suchen speichern und diese jederzeit neu aufrufen."
+    }
+  ],
+  "details": "Details anzeigen"
+}

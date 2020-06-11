@@ -12,12 +12,23 @@ import Footer from "./components/Footer";
 import vCard from "./components/vCard";
 import { Switch, Route, Link } from "react-router-dom";
 import CookieConsent from "react-cookie-consent";
+import { useTranslation } from "react-i18next";
 
-function App() {
+const App = () => {
+  const { t, i18n } = useTranslation("translation");
+  const changeLanguage = code => {
+    i18n.changeLanguage(code);
+  };
   return (
     <div className="App">
       <Navbar />
+      <button type="button" onClick={() => changeLanguage("de")}>
+        {t("translation:de")}
+      </button>
 
+      <button type="button" onClick={() => changeLanguage("en")}>
+        {t("translation:en")}
+      </button>
       <Switch>
         <Route exact path="/" component={Home} />
         <Route path="/about" component={About} />
@@ -49,6 +60,6 @@ function App() {
       <Footer />
     </div>
   );
-}
+};
 
 export default App;

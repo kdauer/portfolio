@@ -1,7 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 const Navbar = () => {
+  const { t } = useTranslation("navbar");
   return (
     <nav className="nav-style">
       <ul>
@@ -17,15 +19,15 @@ const Navbar = () => {
           </Link>
         </li>
         <li>
-          <Link to="/about">About</Link>
+          <Link to="/about">{t("navbar:item.0")}</Link>
         </li>
         <li>
           <Link to="/projects" style={{ textDecoration: "none" }}>
-            Projects
+            {t("navbar:item.1")}
           </Link>
         </li>
         <li>
-          <Link to="/contact">Contact</Link>
+          <Link to="/contact">{t("navbar:item.2")}</Link>
         </li>
       </ul>
     </nav>

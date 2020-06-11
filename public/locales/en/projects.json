@@ -1,0 +1,20 @@
+{
+  "projects": [
+    {
+      "id": "1",
+      "development": "1st Ironhack project, created in 4 days",
+      "description": "a Quizgame where you have to guess the countryname based on the shape"
+    },
+    {
+      "id": "2",
+      "development": "2nd Ironhack project, created in 4 days",
+      "description": "Full Stack Web App that allows users to search for surf spots in portugal based on the break type and if they are logged in they can save them as favourites"
+    },
+    {
+      "id": "3",
+      "development": "3rd and final project for Ironhack, created in 7 days",
+      "description": "A MERN Web App where you can search for low fare train tickets in the Deutsche Bahn train&ticketing system and show days around your selected date. Also loggedin users you can save the connections to search again"
+    }
+  ],
+  "details": "view Details"
+}

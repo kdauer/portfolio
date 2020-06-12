@@ -15,7 +15,7 @@ import CookieConsent from "react-cookie-consent";
 import { useTranslation } from "react-i18next";
 
 const App = () => {
-  const { t, i18n } = useTranslation("translation");
+  const { t, i18n } = useTranslation("translation", "cookie");
   const changeLanguage = code => {
     i18n.changeLanguage(code);
   };
@@ -48,14 +48,14 @@ const App = () => {
         buttonStyle={{ color: "#4e503b", fontSize: "13px" }}
         expires={150}
       >
-        this website uses cookies in the sense of the{" "}
+        {t("cookie:text")}{" "}
         <Link
           to="/privacypolicy"
           style={{ textDecoration: "none", color: "lightblue" }}
         >
-          privacy policy
+          {t("cookie:privacypolicy")}
         </Link>{" "}
-        <span style={{ fontSize: "10px" }}>(accept to continue)</span>
+        <span style={{ fontSize: "10px" }}>{t("cookie:accept")}</span>
       </CookieConsent>
       <Footer />
     </div>

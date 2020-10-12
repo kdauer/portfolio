@@ -22,13 +22,15 @@ const App = () => {
   return (
     <div className="App">
       <Navbar />
-      <button type="button" onClick={() => changeLanguage("de")}>
+      <div className="lang-container">
+      <button className="lang-btn" type="button" onClick={() => changeLanguage("de")}>
         {t("translation:de")}
       </button>
 
-      <button type="button" onClick={() => changeLanguage("en")}>
+      <button className="lang-btn" type="button" onClick={() => changeLanguage("en")}>
         {t("translation:en")}
       </button>
+      </div>
       <Switch>
         <Route exact path="/" component={Home} />
         <Route path="/about" component={About} />

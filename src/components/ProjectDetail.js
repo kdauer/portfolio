@@ -1,5 +1,5 @@
 import React from "react";
-import { myProjects } from "./Projects";
+import { projectsData } from '../assets/data';
 import { useTranslation } from "react-i18next";
 
 const ProjectDetails = props => {
@@ -8,7 +8,7 @@ const ProjectDetails = props => {
     const theProject = oneProject => {
       return oneProject.id === id;
     };
-    return myProjects.find(theProject);
+    return projectsData.find(theProject);
   };
 
   const { params } = props.match;

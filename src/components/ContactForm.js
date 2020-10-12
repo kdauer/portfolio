@@ -1,8 +1,9 @@
-import React, { Component } from "react";
+import React from "react";
 import ReactContactForm from "react-mail-form";
+import { useTranslation } from "react-i18next";
 
-export default class ContactForm extends Component {
-  render() {
+const ContactForm = () =>{
+    const { t } = useTranslation("contact");
     return (
       <div>
         <div className="contactinfo">
@@ -22,10 +23,11 @@ export default class ContactForm extends Component {
         <ReactContactForm
           className="Form"
           to="mail@konstantindauer.de"
-          titlePlaceholder="Subject"
-          contentsPlaceholder="message..."
+          titlePlaceholder={t("contact:subject")}
+          contentsPlaceholder={t("contact:message")}
         />
       </div>
     );
   }
-}
+
+  export default ContactForm;

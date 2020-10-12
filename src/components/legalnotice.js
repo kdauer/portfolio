@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 export default function Impressum() {
   return (
@@ -39,7 +39,7 @@ export default function Impressum() {
         keinen Einfluss auf die aktuelle und zukünftige Gestaltung und auf die
         Inhalte der verlinkten Seiten hat. Daher distanziert sich der Anbieter
         hiermit ausdrücklich von den Inhalten aller verlinkten Seiten, die auf
-        www.webxells.com zu finden sind.
+        www.konstantindauer.de zu finden sind.
       </p>
       <h5>Urheberrecht</h5>
       <p>
